@@ -1,0 +1,27 @@
+/*!
+ * Commons-CSS, the set of commonly used styles.
+ * 
+ * Common.list.css, commons styles for list.
+ * Rubens Mariuzzo, 2012.
+ *
+ * MIT license.
+ */
+
+/* Horizontal & vertical styling for ULs. */
+
+ul.horizontal, 
+ul.vertical                  { margin:1em 0; padding:0; list-style-type:none; }
+
+/* Inline block hack applied. */
+ul.horizontal li             { display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; }
+
+/* Formatting styling for ULs. */
+
+ul.align-left                { float:left; }
+ul.align-right               { float:right; }
+
+ul.horizontal.align-left li  { margin-right:1em; }
+ul.horizontal.align-right li { margin-left:1em; }
+
+ul.vertical.align-left li, 
+ul.vertical.align-right li   { margin-bottom:1em; }
